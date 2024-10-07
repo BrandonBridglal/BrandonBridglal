@@ -1,0 +1,61 @@
+/* Main container */
+.app-container {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: 'Arial Narrow', sans-serif;
+}
+
+/* MainContent section */
+.main-block {
+  padding-top: 10px;
+}
+
+.content-element {
+  max-width: 100%;
+}
+
+.loading-bar {
+  height: 1px;
+  width: 100%;
+  background-color: green;
+}
+
+/* Gallery Section */
+.gallery-block {
+  margin-top: 20px;
+}
+
+.gallery-content img, .gallery-content video {
+  max-width: 100%;
+}
+
+.arrow-left, .arrow-right {
+  cursor: pointer;
+}
+
+.zoom-controls button {
+  margin: 5px;
+  background-color: white;
+  border: none;
+}
+
+/* Timer Section */
+.timer-container {
+  margin-top: 20px;
+}
+
+.timer {
+  color: red;
+}
+
+.separator {
+  width: 100%;
+  height: 2px;
+  background-color: red;
+}
+
+.self-destruct-text {
+  margin-top: 10px;
+  font-family: 'Wire One', sans-serif;
+}

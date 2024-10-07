@@ -1,0 +1,26 @@
+backend:
+  name: git-gateway
+  branch: main    # Ensure this matches the default branch of your GitHub repo
+
+media_folder: "public/images"  # Path where images are stored in your repo
+public_folder: "/images"       # Folder on your site where images are stored
+display_url: https://your-site.netlify.app   # Replace with your Netlify site URL
+
+collections:
+  - name: "Images"
+    label: "Photographs"
+    folder: "public/images"   # Folder where images are stored
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Photo", name: "photo", widget: "image" }
+
+  - name: "videos"
+    label: "Videography"
+    folder: "public/Videos"   # Folder where videos are stored
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Video", name: "video", widget: "file" }
